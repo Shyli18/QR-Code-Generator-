@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./Images/pexels-photo-2387819.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px; /* Increased container width */
+  padding: 40px; /* Increased padding */
+  background: rgba(255, 255, 255, 0.9); /* Added slight opacity */
+  border-radius: 15px;
+  text-align: center;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 20px; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+.container input {
+  width: calc(100% - 20px); /* Adjusted input width */
+  height: 50px;
+  font-size: 18px; /* Increased input font size */
+  border: 1px solid #494eea;
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+}
+
+.container button {
+  width: calc(100% - 20px); /* Adjusted button width */
+  height: 50px;
+  font-size: 18px; /* Increased button font size */
+  background: #494eea;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+#imgBox {
+  width: 250px; /* Increased image box width */
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+
+#imgBox.show-img {
+  max-height: 300px;
+  margin: 20px auto; /* Increased margin */
+  border: 1px solid #d1d1d1;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
