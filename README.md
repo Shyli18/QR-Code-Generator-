@@ -1,4 +1,4 @@
-# QR-Code-Generator-
+# QR-Code-Generator Using JS -
 
 This is a simple web application that allows users to generate QR codes for text or URLs. 
 Users can input their desired text or URL into the provided field, 
